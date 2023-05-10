@@ -1,0 +1,181 @@
+.footer {
+	background: #141414;
+	padding: 0px 20px;
+	&__name{
+		position: relative;
+		margin-bottom: 120px;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: -60px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: #4D4D4D;
+			@media (max-width: 686px){
+				bottom: -40px;
+			}
+		}
+		@media (max-width: 686px){
+			margin-bottom: 80px;
+		}
+	}
+	&__logo {	
+		margin-top: 90px;
+		display: inline-block;
+		text-transform: uppercase;
+		transition: all 0.3s ease 0s;
+		font-weight: 800;
+		font-size: 20px;
+		position: relative;
+		@media (max-width: 686px){
+			margin-top: 60px;
+		}
+		a{
+			color: #fffefee3;
+		}
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	&__copy {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	&__first-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@media (max-width: 1160px){
+			justify-content: center;
+		}
+	}
+
+	&__categories-title {
+		margin-bottom: 20px;
+	}
+
+	&__categories-list {
+		display: flex;
+		column-gap: 120px;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		@media (max-width: 818px){
+			column-gap: 60px;
+		}
+	}
+
+	&__categories-item {
+		margin-bottom: 15px;
+	}
+	&__email {
+		margin-left: 20px;
+		@media (max-width: 1135px){
+			margin: 0;
+		}
+		@media (max-width: 632px){
+			margin-top: 40px;
+		}
+		form {
+			display: flex;
+			input {
+				padding: 18px 24px;
+				width: 230px;
+				border: 1px solid #CCCCCC;
+				&:focus{
+					border: 1px solid #071a6d;
+					box-shadow: 0px 0px 0px 3px #1c39bb69;
+				}
+				&::placeholder{
+					font-family: 'Libre Franklin';
+					font-weight: 400;
+					font-size: 10px;
+					line-height: 12px;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					color: #666666;
+				}
+				@media (max-width:375px){
+					display: block;
+					width: 89vw;
+				}
+			}
+			button{
+				border: 1px solid #1d1c1c;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 12px;
+				color: #FFFFFF;
+				padding: 21px 24px;
+				background: #000000;
+				@media (max-width:375px){
+					display: block;
+					width: 90vw;
+				}
+				&:hover{
+					background: #25242463;
+				}
+			}
+		}
+	}
+
+	&__second-block {
+		margin-top: 40px;
+		display: flex;
+		column-gap: 160px;
+		row-gap: 20px;
+		margin-bottom: 90px;
+		flex-wrap: wrap;
+		@media (max-width: 1160px){
+			justify-content: center;
+		}
+		@media (max-width: 818px){
+			column-gap: 80px;
+		}
+		@media (max-width: 686px){
+			margin-bottom: 40px;
+		}
+	}
+	&__info-title {
+		margin-bottom: 20px;
+	}
+	&__info-item {
+		margin-bottom: 10px;
+	}
+	&__follow-title {
+		margin-bottom: 20px;
+	}
+	&__follow-item {
+		margin-bottom: 10px;
+	}
+	&__template-title {
+		margin-bottom: 20px;
+	}
+	&__template-item {
+		margin-bottom: 10px;
+	}
+}
+.f-title {
+	font-family: 'Libre Franklin';	
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+	margin-bottom: 20px;
+}
+.f-link {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+	cursor: pointer;
+	&:hover{
+		text-decoration: underline;
+	}
+}
