@@ -3,7 +3,7 @@
 		<div class="illustration__container">
 			<div class="illustration__body">
 				<div class="illustration__image">
-					<a href=""><img :src="MainPost.path" :alt="MainPost.title"></a>
+					<NuxtLink to="/post/0"><img :src="MainPost.path" :alt="MainPost.title"></NuxtLink>
 				</div>
 				<div class="illustration__description">
 					<div class="illustration__ill">{{ MainPost.type }}</div>

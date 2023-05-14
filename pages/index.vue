@@ -1,8 +1,6 @@
 <template>
 	<div class="wrapper">
-		<TheHeader />
 		<TheMain />
-		<TheFooter />
 	</div>
 </template>
 <script setup>

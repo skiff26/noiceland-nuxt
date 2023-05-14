@@ -10,10 +10,12 @@
 					<div class="item-posts__autor">{{ author }}</div>
 				</div>
 			</div>
-			<div class="latest-posts__more"><a href="" class="latest-posts__link-view-more">view all latest posts</a></div>
+			<TheLatestPostsButton />
 		</div>
 	</section>
 </template>
 <script setup lang="ts">
 import { LatestPosts } from '~/posts';
+const newPosts = await useFetch('https://jsonplaceholder.typicode.com/posts?_limit=4')
+console.log(newPosts.data.value)
 </script>

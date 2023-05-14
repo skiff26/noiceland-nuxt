@@ -2,7 +2,7 @@
 	<nav class="header__nav">
 		<ul class="header__items">
 			<li class="header__item" v-for="{ link, label } in links" :key="label">
-				<a :href="link">{{ label }}</a>
+				<NuxtLink :to="link">{{ label }}</NuxtLink>
 			</li>
 		</ul>
 	</nav>
@@ -11,7 +11,7 @@
 import { IBase } from '~/interfaces';
 const links: Array<IBase> = [
 	{
-		link: '#home',
+		link: '/',
 		label: 'Home'
 	},
 	{

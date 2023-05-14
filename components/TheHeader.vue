@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<TheHeaderContainer>
-				<a href="" class="header__title">Noiceland</a>
+				<nuxt-link to="/" class="header__title">Noiceland</nuxt-link>
 				<TheHeaderNav />
 		</TheHeaderContainer>
 	</header>

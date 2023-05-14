@@ -1,12 +1,12 @@
-import { IMainPost, IPosts } from '~/interfaces';
-export const MainPost:IMainPost = {
+import { IPost } from '~/interfaces';
+export const MainPost:IPost = {
 	type: "Illustration",
 	title: "Japan House opens in mountainside to foster peak creativity.",
 	text: "Enim omittam qui id, ex quo atqui dictas complectitur. Nec ad timeam accusata, hinc justo falli id eum, ferri novum molestie eos cu.",
 	author: "By Reta Torphy",
-	path: "./img/illustration.jpg"
+	path: "/img/illustration.jpg"
 }
-export const Posts: Array<IPosts> = [
+export const Posts: Array<IPost> = [
 	{
 		type: "Photography",
 		path: "./img/posts/01.jpg",
@@ -44,7 +44,7 @@ export const Posts: Array<IPosts> = [
 		author: "By Reta Torphy"
 	},
 ]
-export const LatestPosts: Array<IPosts> = [
+export const LatestPosts: Array<IPost> = [
 	{
 		type: "Photography",
 		path: "./img/latestposts/01.jpg",
@@ -94,7 +94,7 @@ export const LatestPosts: Array<IPosts> = [
 		author: "By Annie Lueilwitz"
 	},	
 ]
-export const FeaturedPosts: Array<IPosts> = [
+export const FeaturedPosts: Array<IPost> = [
 	{
 		type: "Graphic Design",
 		path: "./img/featuredposts/01.jpg",
