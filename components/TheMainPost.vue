@@ -7,7 +7,7 @@
 				</div>
 				<div class="illustration__description">
 					<div class="illustration__ill">{{ MainPost.type }}</div>
-					<a href="" class="illustration__title">{{ MainPost.title }}</a>
+					<NuxtLink to="/post/0" class="illustration__title">{{ MainPost.title }}</NuxtLink>
 					<div class="illustration__text" v-html="MainPost.text"></div>
 					<a href="" class="illustration__autor">{{ MainPost.author }}</a>
 				</div>
